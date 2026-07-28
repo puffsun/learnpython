@@ -2,18 +2,18 @@ import turtle
 
 # Basic setups
 t = turtle.Turtle()
-t.speed(7)
-# Defines color
-t.color("lime")
+t.speed(0)
 # Draws a square
 def square():
-    for i in range(4):
+  t.color("yellow")
+  for i in range(4):
         t.forward(100)
         t.right(90)
 
 # Draws a circle
 def circle():
-    t.circle(50)
+  t.color("red")
+  t.circle(50)
 
 # Pens up
 def penu():
@@ -44,13 +44,14 @@ def r():
     t.forward(50)
 # Makes a spiral!!!!!!!!!!!!!!!!!!
 def spiral():
+  t.color("blue")
   for i in range(50):
     t.forward(i)
     t.left(80)
 
 # Makes the best spiral in the world!!!!!!!!!!!!!!!!!!!!!!!!!
 def super_spiral():
-  t.color("red")
+  t.color("purple")
   for i in range(75):
     t.forward(2 * i)
     t.left(91)
